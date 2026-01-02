@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  background: #f2f5f9;
+}
+
+/* Navbar */
+.navbar {
+  background: #1e3c72;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar h1 {
+  font-size: 26px;
+}
+
+.navbar p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Main Layout */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+/* Cards */
+.card {
+  background: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+/* Inputs */
+.card input,
+.card select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.card input:focus,
+.card select:focus {
+  border-color: #2a5298;
+}
+
+/* Buttons */
+.card button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #2a5298;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background: #1e3c72;
+}
+
+/* Result */
+.result {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+  color: #1e3c72;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #ffffff;
+  color: #555;
+  font-size: 13px;
+}

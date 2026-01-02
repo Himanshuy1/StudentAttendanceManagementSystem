@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Attendance System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1>🎓 Attendance System</h1>
+    <p>Student Attendance Management</p>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- Add Student -->
+    <div class="card">
+      <h2>Add Student</h2>
+      <input type="text" id="name" placeholder="Student Name" />
+      <input type="number" id="roll" placeholder="Roll Number" />
+      <input type="text" id="className" placeholder="Class (e.g. CSE-3A)" />
+      <button onclick="addStudent()">Add Student</button>
+    </div>
+
+    <!-- Mark Attendance -->
+    <div class="card">
+      <h2>Mark Attendance</h2>
+      <input type="number" id="rollAttend" placeholder="Roll Number" />
+      <select id="status">
+        <option value="Present">Present</option>
+        <option value="Absent">Absent</option>
+      </select>
+      <button onclick="markAttendance()">Mark Attendance</button>
+    </div>
+
+    <!-- Attendance Percentage -->
+    <div class="card">
+      <h2>Attendance Percentage</h2>
+      <input type="number" id="rollPercent" placeholder="Roll Number" />
+      <button onclick="getPercentage()">Check Percentage</button>
+      <p id="result" class="result"></p>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+ 
+
+  <script src="script.js"></script>
+</body>
+</html>
